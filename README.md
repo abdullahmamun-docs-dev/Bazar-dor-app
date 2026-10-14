@@ -1,36 +1,131 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛒 Bazar Dor — Daily Market Price Tracker
 
-## Getting Started
+Bazar Dor is a web application designed to help users explore daily market prices of essential commodities in Bangladesh.
 
-First, run the development server:
+## ✨ Features
+
+- Responsive design for desktop, tablet, and mobile devices
+- Browse products and market prices
+- View product details
+- Explore products by category
+- Compare current and previous prices where available
+- Explore rising and falling price trends
+- User registration and login with Better Auth
+- Protected routes
+- Shopping cart interface
+- User profile management
+- Custom 404 page
+
+> Make sure each listed feature is implemented and working in your project before submitting.
+
+## 🧰 Technologies Used
+
+- Next.js
+- React
+- JavaScript
+- Tailwind CSS
+- Better Auth
+- REST API
+- Git and GitHub
+
+## 📡 API Integration
+
+**Base API URL:**  
+https://openapi.programming-hero.com/api/bazardor
+
+### API Endpoints
+
+| Endpoint | Description |
+|---|---|
+| `/products` | Retrieve products |
+| `/products?category=chal` | Filter products by category |
+| `/products/1` | Retrieve product details |
+| `/categories` | Retrieve categories |
+| `/categories/chal` | Retrieve category information |
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+- Git
+
+### Installation
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/abdullahmamun-docs-dev/Bazar-dor-app.git
+```
+
+**2. Navigate to the project directory**
+
+```bash
+cd Bazar-dor-app
+```
+
+**3. Install dependencies**
+
+```bash
+npm install
+```
+
+**4. Configure environment variables**
+
+Create a `.env` file in the project root and add the environment variables required by your application.
+
+Example, if applicable to your current setup:
+
+```env
+NEXT_PUBLIC_BETTER_AUTH_URL=http://localhost:3000
+```
+
+Never upload secret keys or private credentials to GitHub.
+
+**5. Start the development server**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+Bazar-dor-app/
+├── public/
+├── src/
+│   ├── app/
+│   ├── components/
+│   └── lib/
+├── package.json
+└── README.md
+```
 
-## Learn More
+*This is an illustrative structure. Update it to match your actual project.*
 
-To learn more about Next.js, take a look at the following resources:
+## 🌐 Live Demo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Not deployed yet. The live demo link will be added after deployment.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📂 GitHub Repository
 
-## Deploy on Vercel
+[View Source Code](https://github.com/abdullahmamun-docs-dev/Bazar-dor-app)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 👨‍💻 Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Abdullah Al Mamun**
+
+Frontend Developer | React & Next.js Developer
+
+GitHub: [@abdullahmamun-docs-dev](https://github.com/abdullahmamun-docs-dev)
+
+## 🎯 Project Objective
+
+To make essential commodity price information in Bangladesh easier to explore through a convenient digital platform.
+
+## 📄 License
+
+Developed for educational and assignment purposes.
