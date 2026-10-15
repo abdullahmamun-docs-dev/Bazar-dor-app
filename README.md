@@ -1,32 +1,39 @@
 # 🛒 Bazar Dor — Daily Market Price Tracker
 
-Bazar Dor is a web application designed to help users explore daily market prices of essential commodities in Bangladesh.
+Bazar Dor is a web application designed to help users explore daily market prices of essential commodities in Bangladesh. It provides product information, category-based browsing, price comparisons, market trends, and user account management in a responsive interface.
+
+## 🌐 Live Demo
+
+**Live Website:** https://bazar-dor-2q6z7rwgz-we-407e.vercel.app
+
+**GitHub Repository:** https://github.com/abdullahmamun-docs-dev/Bazar-dor-app
 
 ## ✨ Features
 
-- Responsive design for desktop, tablet, and mobile devices
-- Browse products and market prices
-- View product details
-- Explore products by category
-- Compare current and previous prices where available
-- Explore rising and falling price trends
-- User registration and login with Better Auth
-- Protected routes
-- Shopping cart interface
-- User profile management
-- Custom 404 page
-
-> Make sure each listed feature is implemented and working in your project before submitting.
+- 📱 Responsive design for desktop, tablet, and mobile devices
+- 🛍️ Browse essential products and daily market prices
+- 🔎 View detailed product information
+- 📂 Explore products by category
+- ↕️ Sort products by price and other available criteria
+- 📊 Compare current and previous prices where available
+- 📈 Explore rising and falling price trends
+- 🔐 User registration and login with Better Auth
+- 🛡️ Protected routes for authenticated users
+- 🛒 Shopping cart interface and cart state management
+- 👤 User profile management and profile updates
+- 🚫 Custom 404 Not Found page
 
 ## 🧰 Technologies Used
 
-- Next.js
-- React
-- JavaScript
-- Tailwind CSS
-- Better Auth
-- REST API
-- Git and GitHub
+- **Next.js** — React framework for web applications
+- **React** — Component-based user interface
+- **JavaScript** — Application logic
+- **Tailwind CSS** — Responsive styling
+- **Better Auth** — Authentication and session management
+- **MongoDB** — Database for authentication data
+- **REST API** — Product and category data integration
+- **Git & GitHub** — Version control and source code management
+- **Vercel** — Application deployment
 
 ## 📡 API Integration
 
@@ -37,15 +44,19 @@ https://openapi.programming-hero.com/api/bazardor
 
 | Endpoint | Description |
 |---|---|
-| `/products` | Retrieve products |
-| `/products?category=chal` | Filter products by category |
-| `/products/1` | Retrieve product details |
-| `/categories` | Retrieve categories |
+| `/products` | Retrieve product information |
+| `/products?category=chal` | Retrieve products filtered by category |
+| `/products/1` | Retrieve details for a product |
+| `/categories` | Retrieve available categories |
 | `/categories/chal` | Retrieve category information |
 
 ## 🚀 Getting Started
 
+Follow these steps to run the project locally.
+
 ### Prerequisites
+
+Make sure you have the following installed:
 
 - Node.js
 - npm
@@ -73,15 +84,19 @@ npm install
 
 **4. Configure environment variables**
 
-Create a `.env` file in the project root and add the environment variables required by your application.
+Create a `.env.local` file in the project root and configure the variables required by your application.
 
-Example, if applicable to your current setup:
+Example:
 
 ```env
-NEXT_PUBLIC_BETTER_AUTH_URL=http://localhost:3000
+BETTER_AUTH_SECRET=your_generated_secret
+BETTER_AUTH_URL=http://localhost:3000
+MONGODB_URI=your_mongodb_connection_string
 ```
 
-Never upload secret keys or private credentials to GitHub.
+Replace the example values with your actual local configuration. Check your application code for any additional required variables, including social login credentials if applicable.
+
+**Important:** Never upload `.env.local`, secret keys, database credentials, or other private credentials to GitHub. Configure production environment variables separately in your Vercel project settings.
 
 **5. Start the development server**
 
@@ -89,30 +104,70 @@ Never upload secret keys or private credentials to GitHub.
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+**6. Open the application**
+
+Visit:
+
+http://localhost:3000
 
 ## 📁 Project Structure
 
 ```text
 Bazar-dor-app/
+├── app/
+├── components/
+├── context/
+├── lib/
 ├── public/
-├── src/
-│   ├── app/
-│   ├── components/
-│   └── lib/
+├── .gitignore
+├── AGENTS.md
+├── eslint.config.mjs
+├── jsconfig.json
+├── next.config.mjs
 ├── package.json
+├── package-lock.json
 └── README.md
 ```
 
-*This is an illustrative structure. Update it to match your actual project.*
+## 🔐 Authentication
 
-## 🌐 Live Demo
+Bazar Dor uses Better Auth to support user authentication and session management.
 
-Not deployed yet. The live demo link will be added after deployment.
+Authentication features include:
 
-## 📂 GitHub Repository
+- User registration
+- Email and password sign-in
+- Session management
+- Protected pages
+- User profile management
 
-[View Source Code](https://github.com/abdullahmamun-docs-dev/Bazar-dor-app)
+Production authentication requires the appropriate environment variables to be configured in Vercel.
+
+## 🛒 Shopping Cart
+
+The application includes a shopping cart interface with cart state management to support the shopping experience.
+
+## 📊 Market Price Tracking
+
+Users can explore essential commodity prices, browse products by category, view available product details, compare current and previous prices, and review rising or falling price trends where the API provides that information.
+
+## 📱 Responsive Design
+
+The user interface is designed to work across desktop computers, tablets, and mobile devices.
+
+## 🚀 Deployment
+
+The application is deployed using Vercel.
+
+**Live Website:** https://bazar-dor-2q6z7rwgz-we-407e.vercel.app
+
+To deploy your own version:
+
+1. Push the project to GitHub.
+2. Import the repository into Vercel.
+3. Configure the required environment variables in Vercel.
+4. Deploy the application.
+5. Verify authentication, database connectivity, and application routes.
 
 ## 👨‍💻 Author
 
@@ -120,12 +175,13 @@ Not deployed yet. The live demo link will be added after deployment.
 
 Frontend Developer | React & Next.js Developer
 
-GitHub: [@abdullahmamun-docs-dev](https://github.com/abdullahmamun-docs-dev)
+- **GitHub:** https://github.com/abdullahmamun-docs-dev
+- **Repository:** https://github.com/abdullahmamun-docs-dev/Bazar-dor-app
 
 ## 🎯 Project Objective
 
-To make essential commodity price information in Bangladesh easier to explore through a convenient digital platform.
+The objective of Bazar Dor is to make essential commodity price information in Bangladesh easier to explore through a convenient, accessible, and user-friendly digital platform.
 
 ## 📄 License
 
-Developed for educational and assignment purposes.
+This project was developed for educational and assignment purposes.
